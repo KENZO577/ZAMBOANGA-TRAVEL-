@@ -1630,7 +1630,7 @@ if($('#spoilerz-body').length == 0){
     //spoiler alert
     let spoilerz = windowTemplate.clone();
     spoilerz.attr('id','spoilerz-body');
-    spoilerz.find('#premiumPostBody').html('<h2>Spoiler Warning!</h2><p>These files reveal details of events before and during the game, tread carefully Tenno!</p>');
+    spoilerz.find('#premiumPostBody').html('<h2>Welcome!</h2><p>This is our travel guide to Zamboanga, brought to you!</p>');
     spoilerz.attr('data-window','spoilerz');
     $('.ArticleBody-content').append(spoilerz);
     makeDraggable(spoilerz[0]);
@@ -1650,131 +1650,8 @@ hoverSound.play();
 });
 
 </script></p>
-                            </div>
-
-                            
-                                            </div>
-                    <div class="ArticleBody-related NewsPostSidebar post-sidebar">
-                        <a class="NewsPostSidebar-download" href="https://www.warframe.com/download">
-                            <button class="Button Button--primary is-fullWidth"  ><span class="Button-label">Download Now</span></button>
-                        </a>
-
-                        <div class="NewsPostSidebar-header h6">Recent News</div>
-                        <div class="NewsPostSidebar-posts">
-                                                            <div class="Card NewsCard">
-            <a class="Card-media" href="https://www.warframe.com/news/the-sentinel-572024" style="background-image: url(https://www-static.warframe.com/uploads/thumbnails/4f1fa813475cad0e7ed73116786487e5_800x450.png);"></a>
-        <div class="Card-content"><div class="NewsCard-title"><a href="https://www.warframe.com/news/the-sentinel-572024">The Sentinel - 5/7/2024</a></div>
-    <div class="NewsCard-date">Posted On 2024-05-07 15:55:00</div>
-            <div class="NewsCard-tags">
-                    <div class="PlatformTag" data-platform="pc">
-                                    pc
-                            </div>
-                    <div class="PlatformTag" data-platform="psn">
-                                    psn
-                            </div>
-                    <div class="PlatformTag" data-platform="xbox">
-                                    xbox
-                            </div>
-                    <div class="PlatformTag" data-platform="switch">
-                                    nintendo switch
-                            </div>
-                    <div class="PlatformTag" data-platform="mobile">
-                                    mobile
-                            </div>
-                    <div class="PlatformTag" data-platform="blog">
-                                    blog
-                            </div>
-            </div></div>
-</div>
-                                                            <div class="Card NewsCard">
-            <a class="Card-media" href="https://www.warframe.com/news/volt-floof-makeship-campaign" style="background-image: url(https://www-static.warframe.com/uploads/thumbnails/58796015a571d4421e8d5316a656d8b6_800x450.png);"></a>
-        <div class="Card-content"><div class="NewsCard-title"><a href="https://www.warframe.com/news/volt-floof-makeship-campaign">Volt Floof Makeship Campaign</a></div>
-    <div class="NewsCard-date">Posted On 2024-05-03 14:19:00</div>
-            <div class="NewsCard-tags">
-                    <div class="PlatformTag" data-platform="pc">
-                                    pc
-                            </div>
-                    <div class="PlatformTag" data-platform="psn">
-                                    psn
-                            </div>
-                    <div class="PlatformTag" data-platform="xbox">
-                                    xbox
-                            </div>
-                    <div class="PlatformTag" data-platform="switch">
-                                    nintendo switch
-                            </div>
-                    <div class="PlatformTag" data-platform="mobile">
-                                    mobile
-                            </div>
-                    <div class="PlatformTag" data-platform="blog">
-                                    blog
-                            </div>
-            </div></div>
-</div>
-                                                            <div class="Card NewsCard">
-            <a class="Card-media" href="https://www.warframe.com/news/the-sentinel-4302024" style="background-image: url(https://www-static.warframe.com/uploads/thumbnails/09972f8c2e5c2b6223080d298c21b5cd_800x450.png);"></a>
-        <div class="Card-content"><div class="NewsCard-title"><a href="https://www.warframe.com/news/the-sentinel-4302024">The Sentinel - 4/30/2024</a></div>
-    <div class="NewsCard-date">Posted On 2024-04-30 14:05:00</div>
-            <div class="NewsCard-tags">
-                    <div class="PlatformTag" data-platform="pc">
-                                    pc
-                            </div>
-                    <div class="PlatformTag" data-platform="psn">
-                                    psn
-                            </div>
-                    <div class="PlatformTag" data-platform="xbox">
-                                    xbox
-                            </div>
-                    <div class="PlatformTag" data-platform="switch">
-                                    nintendo switch
-                            </div>
-                    <div class="PlatformTag" data-platform="mobile">
-                                    mobile
-                            </div>
-                    <div class="PlatformTag" data-platform="blog">
-                                    blog
-                            </div>
-            </div></div>
-</div>
-                                                    </div>
-                    </div>
-                </div>
-            </div></div></div>
-    </div>
-</div>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#share").jsSocials({
-                shares: ["twitter", "facebook"],
-            });
-
-            $("iframe[src*='youtube'],iframe[src*='twitch']").wrap('<div class="videowrapper"></div>');
-
-            function getId(url) {
-                var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-                var match = url.match(regExp);
-
-                if (match && match[2].length == 11) {
-                    return match[2];
-                } else {
-                    return 'error';
-                }
-            }
-
-            $('#post-body a.youtubeLink').colorbox({
-                iframe:true,
-                innerWidth:1020,
-                innerHeight:574,
-                scrolling:false,
-                href:function(){
-                    var videoId = getId($.colorbox.element().attr('href'));
-                    return '//www.youtube.com/embed/' + videoId + '/?autoplay=1&rel=0';
-                }
-            });
-        });
-    </script>
-        </div>
+                            </div>                                                                            
+                                                            
         <div class="push"></div>
     </div>
             <div id="footer" class="FooterNavigationContainer">
@@ -1783,25 +1660,7 @@ hoverSound.play();
             <div class="FooterNavigationBar-homeLink">
                 <a href="https://www.warframe.com"><img class="FooterNavigationBar-homeIcon" src="https://www-static.warframe.com/images/headerLogo.png" alt="Warframe" /></a>
             </div>
-            <div class="FooterNavigationBar-linkContainer">
-                <div class="FooterNavigationBar-links">
-                    
-                    
-                    <a class="FooterNavigationLink" id="lnkFooterSupport" href="https://www.warframe.com/zendesk">Support</a>
-                    <div class="FooterNavigationLinkDivider"></div>
-                    <a class="FooterNavigationLink" id="lnkFooterPress" href="https://www.digitalextremes.com">Press</a>
-                    <div class="FooterNavigationLinkDivider"></div>
-                    <a class="FooterNavigationLink" id="lnkFooterTOU" href="https://www.warframe.com/terms">Terms of Use</a>
-                    <div class="FooterNavigationLinkDivider"></div>
-                    <a class="FooterNavigationLink" id="lnkFooterPrivPolicy" href="https://www.warframe.com/privacy">Privacy Policy</a>
-                    <div class="FooterNavigationLinkDivider"></div>
-                    <a class="FooterNavigationLink" id="lnkFooterEULA" href="https://www.warframe.com/eula">EULA</a>
-                                            <div class="FooterNavigationLinkDivider"></div>
-                        <div class="FooterNavigationLink">
-                            <div id="ot-sdk-btn" class="ot-sdk-show-settings" id="lnkFooterCookie">Cookie Settings</div>
-                        </div>
-                                    </div>
-            </div>
+            
             <div class="FooterNavigationBar-dropdownContainer" id="drpFooterLanguage">
                 <div id="footer-language-dropdown" class="FooterNavigationLanguageDropdown">
     <div class="FooterNavigationLanguageDropdown-overlay">
@@ -1809,48 +1668,6 @@ hoverSound.play();
         <div class="FooterNavigationLanguageDropdown-label">English</div>
         <img class="Icon FooterNavigationLanguageDropdown-dropdownIcon"  src="https://www-static.warframe.com/images/icons/material/dropdown.svg" alt="" />
     </div>
-    <ul class="FooterNavigationLanguageDropdown-dropdown">
-                                                        <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpDE" href="/de/locale">Deutsch</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpRU" href="/ru/locale">Русский</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpFR" href="/fr/locale">Français</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpES" href="/es/locale">Español</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpJA" href="/ja/locale">日本語</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpPT-BR" href="/pt-br/locale">Português</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpTR" href="/tr/locale">Türkçe</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpPL" href="/pl/locale">Polski</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpKO" href="/ko/locale">한국어</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpIT" href="/it/locale">Italiano</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpZH-HANS" href="/zh-hans/locale">简体中文</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpZH-HANT" href="/zh-hant/locale">繁體中文</a>
-                </li>
-                                                <li class="FooterNavigationLanguageDropdown-option">
-                    <a class="FooterNavigationLanguageDropdown-optionLink" id="drpUK" href="/uk/locale">Українська</a>
-                </li>
-                        </ul>
-
 </div>
             </div>
         </div>
